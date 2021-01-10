@@ -1,0 +1,21 @@
+{
+   "locales": [
+      {
+         "locale": "en",
+         "displayName": "en",
+         "appLanguage": "en-US",
+         "crystallizeCatalogueLanguage": "en",
+         "crystallizePriceVariant": "default"
+      },
+      {
+         "locale": "it",
+         "displayName": "it",
+         "appLanguage": "en-US",
+         "crystallizeCatalogueLanguage": "it",
+         "crystallizePriceVariant": "default"
+      }
+   ],
+   "paymentProviders": [
+      "stripe"
+   ]
+}
