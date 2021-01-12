@@ -31,12 +31,12 @@ export default function Footer() {
           </li>
         ))}
       </NavList>
-      <Powered>
+      {/* <Powered>
         <p>{t('layout.ecomBy')}</p>
         <a href="https://crystallize.com" aria-label="crystallize.com">
           <LogoCrystallize size={10} />
         </a>
-      </Powered>
+      </Powered> */}
     </Outer>
   );
 }

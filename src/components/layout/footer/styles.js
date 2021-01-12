@@ -4,7 +4,7 @@ export const Outer = styled.footer`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   max-width: 1600px;
-  margin: 50px auto;
+  margin: 50px auto 0 auto;
   border-top: 2px solid var(--color-box-background);
   padding: 50px 50px;
   justify-content: space-between;

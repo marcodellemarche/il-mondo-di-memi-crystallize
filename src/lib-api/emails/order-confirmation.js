@@ -41,9 +41,9 @@ export default async function sendOrderConfirmation(orderId) {
               </p>
               <p>
                 Total: <strong>${formatCurrency({
-                  amount: order.total.gross,
-                  currency: order.total.currency
-                })}</strong>
+      amount: order.total.gross,
+      currency: order.total.currency
+    })}</strong>
               </p>
             </mj-text>
             <mj-table>
@@ -53,17 +53,16 @@ export default async function sendOrderConfirmation(orderId) {
                 <th style="padding: 0 0 0 15px;">Total</th>
               </tr>
               ${order.cart.map(
-                (item) => `<tr>
-                  <td style="padding: 0 15px 0 0;">${item.name} (${
-                  item.sku
-                })</td>
+      (item) => `<tr>
+                  <td style="padding: 0 15px 0 0;">${item.name} (${item.sku
+        })</td>
                   <td style="padding: 0 15px;">${item.quantity}</td>
                   <td style="padding: 0 0 0 15px;">${formatCurrency({
-                    amount: item.price.gross * item.quantity,
-                    currency: item.price.currency
-                  })}</td>
+          amount: item.price.gross * item.quantity,
+          currency: item.price.currency
+        })}</td>
                 </tr>`
-              )}
+    )}
             </mj-table>
           </mj-column>
         </mj-section>
@@ -73,7 +72,7 @@ export default async function sendOrderConfirmation(orderId) {
 
     await sendEmail({
       to: email,
-      from: 'example@crystallize.com',
+      from: 'mondomemi@gmail.com',
       subject: 'Order Summary',
       html
     });
